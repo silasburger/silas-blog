@@ -1,6 +1,7 @@
 Copystatic/admin/config.yml: copy code to clipboard
 backend:
-  name: test-repo
+  name: github
+  repo: silasburger/language_teacher
 media_folder: static/assets
 public_folder: /assets
 collections:
