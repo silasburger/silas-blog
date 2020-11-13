@@ -18,9 +18,11 @@
     "gatsby-plugin-netlify-cms": "^4.3.17",
     "gatsby-source-filesystem": "^2.4.2",
     "gatsby-transformer-remark": "^2.9.2",
+    "i18next": "^19.8.3",
     "netlify-cms-app": "^2.13.3",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-i18next": "^11.7.3"
   },
   "devDependencies": {
     "prettier": "2.1.2"

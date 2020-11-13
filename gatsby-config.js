@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-  siteMetaData: {
+  siteMetadata: {
     title: 'Lisa Ortega',
     menuLink: [
       {
