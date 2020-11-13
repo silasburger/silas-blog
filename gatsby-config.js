@@ -7,28 +7,6 @@
 module.exports = {
   siteMetadata: {
     title: 'Lisa Ortega',
-    menuLink: [
-      {
-        name: 'Home',
-        link: '/',
-      },
-      {
-        name: 'Language Course',
-        link: '/courses' 
-      },
-      {
-        name: 'Astrology Readings',
-        link: '/readings' 
-      },
-      {
-        name: 'Blog',
-        link: '/blog',
-      },
-      {
-        name: 'Contact', 
-        link: '/contact',
-      },
-    ],
   }, 
   plugins: [
     `gatsby-plugin-netlify-cms`,
@@ -40,5 +18,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-postcss`,
     ],
 }
