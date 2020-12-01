@@ -4,23 +4,20 @@ const menuMap = [
     {
       name: i18n.t('home'),
       link: '/',
+      image: '',  
     },
     {
-      name: i18n.t('language-course'),
-      link: '/courses',
+      name: i18n.t('spanish'),
+      link: '/spanish',
     },
     {
-      name: i18n.t('astrology-readings'),
-      link: '/readings',
+      name: i18n.t('astrology'),
+      link: '/astrology',
     },
     {
-      name: i18n.t('blog'),
-      link: '/blog',
+      name: i18n.t('about'),
+      link: '/about',
     },
-    {
-      name: i18n.t('contact'),
-      link: '/contact',
-    }
 ];
 
 export default menuMap;

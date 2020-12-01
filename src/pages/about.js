@@ -1,6 +1,6 @@
 import React from "react";
-import tw from "twin.macro"
-import NavBar from 'components/NavBar'
+import tw from "twin.macro";
+import Layout from 'components/Layout';
 
 const Paragraph = tw.p`
   text-red-600
@@ -8,9 +8,8 @@ const Paragraph = tw.p`
 
 export default function About() {
   return (
-    <div>
-      <NavBar />
+    <Layout>
       <Paragraph>I'm writing an about page and I'm curious if I can apply css to it</Paragraph>
-    </div>
+    </Layout>
   );
 }

@@ -1,13 +1,12 @@
-import React from "react"
+import React from "react";
+import Layout from 'components/Layout';
 import { useTranslation } from 'react-i18next';
-// import { I18nextProvider, useTranslation } from 'react-i18next';
-// import i18n from '../i18n/i18n';
 
 export default function Home() {
   const {t} = useTranslation();
   return (
-    // <I18nextProvider i18n={i18n}>
+    <Layout>
       <div>{t('hello')}</div>
-    // </I18nextProvider>
+    </Layout>
   );
 }
