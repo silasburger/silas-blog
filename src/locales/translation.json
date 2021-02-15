@@ -1,12 +1,16 @@
 {
   "en": {
     "translation": {
-      "hello": "hello"
+      "hello": "easfdghjkljhgfdghj",
+      "home": "Home",
+      "readings": "Astrology"
     }
   },  
   "es": {
     "translation": {
-      "hello": "hola"
+      "hello": "hola",
+      "home": "Hogar",
+      "readings": "Astrologia"
     }
   }
 }

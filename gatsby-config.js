@@ -7,6 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Lisa Ortega',
+    supportedLanguages: ['en', 'es'],
   }, 
   plugins: [
     `gatsby-plugin-netlify-cms`,
