@@ -8,6 +8,7 @@ module.exports = {
   siteMetadata: {
     title: 'Lisa Ortega',
     supportedLanguages: ['en', 'es'],
+    defaultLanguage: 'en',
   }, 
   plugins: [
     `gatsby-plugin-netlify-cms`,
@@ -21,5 +22,14 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-postcss`,
-    ],
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {        
+        langKeyDefault: 'en',
+        langKeyForNull: 'en',
+        prefixDefault: false,
+        useLangKeyLayout: false,
+      }
+    }
+  ],
 }

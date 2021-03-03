@@ -1,21 +1,19 @@
-import i18n from 'i18n';
-
 const menuMap = [
     {
-      name: i18n.t('home'),
+      name: 'home',
       link: '/',
       image: '',  
     },
     {
-      name: i18n.t('spanish'),
+      name: 'spanish',
       link: '/spanish',
     },
     {
-      name: i18n.t('astrology'),
+      name: 'astrology',
       link: '/astrology',
     },
     {
-      name: i18n.t('about'),
+      name: 'about',
       link: '/about',
     },
 ];

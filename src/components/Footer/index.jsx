@@ -6,7 +6,7 @@ const GlobalFooter = styled.footer`
   bottom: 0px;
 `
 
-export default function Footer() {
+export default function Footer({lang}) {
   return (
     <GlobalFooter>
       Footer

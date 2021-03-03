@@ -3,14 +3,16 @@
     "translation": {
       "hello": "easfdghjkljhgfdghj",
       "home": "Home",
-      "readings": "Astrology"
+      "readings": "Astrology", 
+      "about_text": "It is I"
     }
   },  
   "es": {
     "translation": {
       "hello": "hola",
       "home": "Hogar",
-      "readings": "Astrologia"
+      "readings": "Astrologia",
+      "about_text": "Soy yo!!"
     }
   }
 }

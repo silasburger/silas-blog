@@ -1,4 +1,6 @@
 # Logs
+      "home": "Hogar",
+      "astrology": "Astrologia"
 logs
 *.log
 npm-debug.log*

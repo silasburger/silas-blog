@@ -1,10 +1,10 @@
 import React from "react";
 import NavBar from 'components/NavBar';
 
-export default function Header() {
+export default function Header({lang}) {
   return (
     <header>
-      <NavBar />
+      <NavBar lang={lang}/>
     </header>
   );
 }
