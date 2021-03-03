@@ -12,16 +12,18 @@ function LanguageSwitcher({lang}) {
     return i18n.changeLanguage(nextLanguage);
   }
 
+  const pathName = typeof window !== 'undefined' ? window.location.pathname : '';
+
   if (lang === "en") {
     return (
-      <Link to={`/es${window.location.pathname}`} onClick={changeLanguage}>
+      <Link to={`/es${pathName}`} onClick={changeLanguage}>
         ES
       </Link>
     )
   } else {
     return (
       <Link
-        to={window.location.pathname.replace("/" + lang + "/", "/")}
+        to={pathName.replace("/" + lang + "/", "/")}
         onClick={changeLanguage}
       >
         EN
