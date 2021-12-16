@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Lisa Ortega',
+    title: 'Blog',
     supportedLanguages: ['en', 'es'],
     defaultLanguage: 'en',
   }, 
@@ -19,16 +19,39 @@ module.exports = {
         path: `${__dirname}/src/blog`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/locales`,
+        name: `locale`
+      }
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-postcss`,
     {
-      resolve: 'gatsby-plugin-i18n',
-      options: {        
-        langKeyDefault: 'en',
-        langKeyForNull: 'en',
-        prefixDefault: false,
-        useLangKeyLayout: false,
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem`
+        languages: [`en`, `es`],
+        defaultLanguage: `en`,
+        // if you are using Helmet, you must include siteUrl, and make sure you add http:https
+        siteUrl: `http://localhost:8000`,
+        // you can pass any i18next options
+        // pass following options to allow message content as a key
+        i18nextOptions: {
+          interpolation: {
+            escapeValue: false // not needed for react as it escapes by default
+          },
+          keySeparator: false,
+          nsSeparator: false
+        },
+        pages: [
+          {
+            matchPath: '/:lang?/blog/:uid',
+            getLanguageFromPath: true,
+          },
+        ]
       }
     }
   ],

@@ -1,13 +1,16 @@
 import React from "react";
-import { Link } from 'gatsby';
+import { Link, useI18next} from 'gatsby-plugin-react-i18next';
 import menuMap from './menuMap';
 import LanguageSwitcher from 'components/LanguageSwitcher';
 
-export default function NavBar({lang}) {
+export default function NavBar() {
+  const { language } = useI18next();
+  
+
   return (
     <nav>
-      {menuMap.map(({name, link}) => <Link to={link}>{name}</Link>)}
-      <LanguageSwitcher lang={lang}/>
+      {menuMap.map(({name, link}) => <Link language={language} to={link}>{name}</Link>)}
+      <LanguageSwitcher language={language} />
     </nav>
   );
 }

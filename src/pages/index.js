@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { graphql } from 'gatsby';
 import Layout from 'components/Layout';
 import { useTranslation } from 'react-i18next';
 import tw from "twin.macro";
 import BlockLink from 'components/BlockLink';
-import { changeLanguage } from 'i18n'
 
 const ReadingsBlock = tw.div`
   w-64
@@ -26,15 +26,13 @@ const HomeWrapper = tw.div`
   justify-around
 `
 
-export default function Home() {
-  const lang = 'en';
-  const {i18n} = useTranslation();
-  useEffect(() => {
-    changeLanguage(lang, i18n.language); 
-  })
+export default function Home({ data }) {
+  const {t} = useTranslation();
+
   return (
-    <Layout lang={lang}>
+    <Layout>
       <HomeWrapper>
+        {t('hello')}
         <BlockLink link={'/astrology'}>
           <ReadingsBlock />
         </BlockLink>
@@ -45,3 +43,17 @@ export default function Home() {
     </Layout>
   );
 }
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

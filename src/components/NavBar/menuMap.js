@@ -5,12 +5,8 @@ const menuMap = [
       image: '',  
     },
     {
-      name: 'spanish',
-      link: '/spanish',
-    },
-    {
-      name: 'astrology',
-      link: '/astrology',
+      name: 'blog',
+      link: '/blog',
     },
     {
       name: 'about',

@@ -1,30 +1,20 @@
-import PropTypes from "prop-types"
-import React, { Component } from "react"
-import { Link } from "gatsby"
-import i18n from "i18n";
+import React from "react"
+import { Link, useI18next } from "gatsby-plugin-react-i18next"
 
-function LanguageSwitcher({lang}) {
+function LanguageSwitcher({ language }) {
+  const { originalPath } = useI18next();
 
-  let changeLanguage = () => {
-    let nextLanguage; 
-    if (lang === 'en') nextLanguage = 'es';
-    else nextLanguage = 'en';
-    return i18n.changeLanguage(nextLanguage);
-  }
-
-  const pathName = typeof window !== 'undefined' ? window.location.pathname : '';
-
-  if (lang === "en") {
+  if (language === "en") {
     return (
-      <Link to={`/es${pathName}`} onClick={changeLanguage}>
+      <Link to={originalPath} language={'es'}>
         ES
       </Link>
     )
   } else {
     return (
       <Link
-        to={pathName.replace("/" + lang + "/", "/")}
-        onClick={changeLanguage}
+        to={originalPath}
+        language={'en'}
       >
         EN
       </Link>
