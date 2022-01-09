@@ -5,6 +5,9 @@ module.exports = {
   },
   purge: [],
   theme: {
+    colors: {
+      'light-blue': 'azure',
+    },
     extend: {},
   },
   variants: {},

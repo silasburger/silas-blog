@@ -1,1 +1,13 @@
 @tailwind base;
+
+html {
+    background-color: azure;
+}
+
+html,
+body,
+#___gatsby,
+#___gatsby > div,
+#gatsby-focus-wrapper {
+  height: 100%;
+}

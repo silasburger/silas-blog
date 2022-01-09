@@ -1,10 +1,10 @@
 import React from 'react';
-import { GlobalStyles } from 'twin.macro'
+// import { GlobalStyles } from 'twin.macro'
 
 export const wrapRootElement = ({ element }) => {
   return (
-    <div>
-      <GlobalStyles />
+    <div className="wrap-root">
+      {/* <GlobalStyles /> */}
       {element}
     </div>
   );

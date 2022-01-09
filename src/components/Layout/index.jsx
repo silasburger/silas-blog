@@ -5,7 +5,8 @@ import Footer from 'components/Footer';
 
 const PageLayout = tw.div`
   text-blue-600
-` 
+  h-full
+`
 
 export default function Layout({ children }) {
 

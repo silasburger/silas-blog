@@ -33,10 +33,10 @@ export default function Home({ data }) {
     <Layout>
       <HomeWrapper>
         {t('hello')}
-        <BlockLink link={'/astrology'}>
+        <BlockLink link={'/about'}>
           <ReadingsBlock />
         </BlockLink>
-        <BlockLink link={'/spanish'}>
+        <BlockLink link={'/blog'}>
           <SpanishBlock />        
         </BlockLink>
       </HomeWrapper>
