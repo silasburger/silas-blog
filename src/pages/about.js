@@ -1,18 +1,14 @@
 import React from "react";
-import tw from "twin.macro";
 import Layout from 'components/Layout';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-
-const Paragraph = tw.p`
-  text-red-600
-` 
+import { graphql } from 'gatsby';
 
 export default function About() {
   const { t } = useTranslation();
   
   return (
     <Layout>
-      <Paragraph>{ t('about_text') }</Paragraph>
+      <p>{ t('about_text') }</p>
     </Layout>
   );
 }

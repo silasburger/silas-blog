@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Blog',
+    title: "silas.blog",
     supportedLanguages: ['en', 'es'],
     defaultLanguage: 'en',
   }, 
@@ -27,8 +27,8 @@ module.exports = {
       }
     },
     `gatsby-transformer-remark`,
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-react-i18next`,
       options: {

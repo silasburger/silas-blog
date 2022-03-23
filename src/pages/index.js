@@ -2,47 +2,26 @@ import React from "react";
 import { graphql } from 'gatsby';
 import Layout from 'components/Layout';
 import { useTranslation } from 'react-i18next';
-import tw from "twin.macro";
 import BlockLink from 'components/BlockLink';
 
-const ReadingsBlock = tw.div`
-  w-64
-  h-10
-  border-solid
-  border-red-500
-  border-2
-`
-
-const SpanishBlock = tw.div`
-  w-64
-  h-10
-  border-solid
-  border-red-500
-  border-2
-`
-
-const HomeWrapper = tw.div`
-  flex
-  justify-around
-`
 
 export default function Home({ data }) {
   const {t} = useTranslation();
 
   return (
     <Layout>
-      <HomeWrapper>
+      <div>
         {t('hello')}
         <BlockLink link={'/about'}>
-          <ReadingsBlock />
+          <div />
         </BlockLink>
         <BlockLink link={'/blog'}>
-          <SpanishBlock />        
+          <div />        
         </BlockLink>
-      </HomeWrapper>
+      </div>
     </Layout>
   );
-}
+    }
 
 export const query = graphql`
   query($language: String!) {
