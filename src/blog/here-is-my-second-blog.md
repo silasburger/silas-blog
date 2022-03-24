@@ -12,6 +12,6 @@ tags:
 ---
 # here we go
 
-**Take a gook**
+**Take a look**
 
 asdf
