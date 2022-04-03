@@ -48,7 +48,7 @@ module.exports = {
         },
         pages: [
           {
-            matchPath: '/:lang?/blog/:uid',
+            matchPath: '/:lang?/:uid',
             getLanguageFromPath: true,
           },
         ]
