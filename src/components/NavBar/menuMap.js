@@ -5,10 +5,6 @@ const menuMap = [
       image: '',  
     },
     {
-      name: 'blog',
-      link: '/blog',
-    },
-    {
       name: 'about',
       link: '/about',
     },
