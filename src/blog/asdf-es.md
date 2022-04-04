@@ -1,7 +1,10 @@
 ---
-slug: /post/asdf1
-date: 2020-11-11T01:27:22.469Z
-title: asdf-es
+slug: /post/1
+date: 2022-04-04T14:05:03.952Z
+title: el primero entrada del blog
+# en or es
 lang: es
 ---
-es  
+# Hola mundo
+
+aqui estamos
