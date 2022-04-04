@@ -15,6 +15,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           node {
             frontmatter {
               slug
+              lang
             }
           }
         }
@@ -29,12 +30,19 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    let path;
+    if(node.frontmatter.lang === 'en') {
+      path = node.frontmatter.slug
+    } else {
+      path = node.frontmatter.lang + node.frontmatter.slug;
+    }
     createPage({
-      path: node.frontmatter.slug,
+      path: path,
       component: blogPostTemplate,
       context: {
         // additional data can be passed via context
         slug: node.frontmatter.slug,
+        language: node.frontmatter.lang, 
       },
     })
   })

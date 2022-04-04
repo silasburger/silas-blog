@@ -16,7 +16,7 @@ export default function Home({ data }) {
 
     return (
       <div key={slug + date} className="post-wrapper">
-        <Link to={slug}>{title}</Link><i>{date}</i>
+        <Link language={language} to={slug}>{title}</Link><i>{date}</i>
       </div>
     );
   });

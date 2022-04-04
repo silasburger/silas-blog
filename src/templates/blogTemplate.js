@@ -24,13 +24,22 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-  query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+  query($slug: String!, $language: String!) {
+    markdownRemark(frontmatter: {slug: {eq: $slug}, lang: {eq: $language}}) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+      }
+    }
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
       }
     }
   }

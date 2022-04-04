@@ -48,11 +48,21 @@ module.exports = {
           debug: true,
         },
         pages: [
+          // {
+          //   matchPath: '/:lang?/about',
+          //   getLanguageFromPath: true,
+          //   languages: ['es', 'en']
+          // },
           {
             matchPath: '/:lang?/post/:uid',
             getLanguageFromPath: true,
-            excludeLanguages: ['es'],
-          }
+            languages: ['es', 'en'],
+          },
+          // {
+          //   matchPath: '/',
+          //   getLanguageFromPath: true,
+          //   languages: ['es', 'en'],
+          // },
         ]
       }
     }

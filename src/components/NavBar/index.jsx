@@ -9,7 +9,7 @@ export default function NavBar() {
 
   return (
     <nav>
-      {menuMap.map(({name, link}) => <Link language={language} to={link}>{name}</Link>)}
+      {menuMap.map(({name, link}) => <Link language={language} to={link}>{t(name)}</Link>)}
       <LanguageSwitcher language={language} />
     </nav>
   );
