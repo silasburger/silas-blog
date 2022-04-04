@@ -13,5 +13,6 @@ collections:
       - { name: slug, label: Slug }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - { name: lang, label: Language, comment: en or es }
       - { name: tags, label: Tags, widget: list }
       - { name: body, label: Body, widget: markdown }

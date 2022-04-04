@@ -36,7 +36,7 @@ module.exports = {
         languages: [`en`, `es`],
         defaultLanguage: `en`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-        siteUrl: `http://localhost:8000`,
+        siteUrl: `https://silas.blog`,
         // you can pass any i18next options
         // pass following options to allow message content as a key
         i18nextOptions: {
@@ -44,13 +44,15 @@ module.exports = {
             escapeValue: false // not needed for react as it escapes by default
           },
           keySeparator: false,
-          nsSeparator: false
+          nsSeparator: false,
+          debug: true,
         },
         pages: [
           {
-            matchPath: '/:lang?/:uid',
+            matchPath: '/:lang?/post/:uid',
             getLanguageFromPath: true,
-          },
+            excludeLanguages: ['es'],
+          }
         ]
       }
     }
