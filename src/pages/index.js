@@ -23,7 +23,7 @@ export default function Home({ data }) {
 
   return (
     <Layout>
-      <div>
+      <div className="home-wrapper">
         <h1>Posts</h1>
         {posts()}
       </div>

@@ -1,13 +1,16 @@
 const menuMap = [
-    {
-      name: 'home',
+     {
+      name: 'back',
       link: '/',
-      image: '',  
     },
-    {
+];
+
+const menuMapHome = [
+     {
       name: 'about',
       link: '/about',
     },
 ];
 
-export default menuMap;
+
+export {menuMap, menuMapHome};
