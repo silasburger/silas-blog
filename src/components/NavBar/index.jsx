@@ -7,7 +7,7 @@ import { IoChevronBackSharp } from "react-icons/io5";
 export default function NavBar() {
   const { language } = useI18next();
   const { t } = useTranslation();
-  const pathname = typeof window !== undefined ? window.location.pathname : '';
+  const pathname = typeof window !== 'undefined' ? window.location.pathname : '';
   const menu = /^\/es\/?$|^\/$/.test(pathname) 
         ? menuMapHome 
         : menuMap;
