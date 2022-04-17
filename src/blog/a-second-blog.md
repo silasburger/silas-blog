@@ -1,5 +1,5 @@
 ---
-slug: /posts/2
+slug: /post/2
 date: 2022-04-17T11:44:44.387Z
 title: A Second Blog
 # en or es
