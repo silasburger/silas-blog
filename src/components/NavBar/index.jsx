@@ -21,6 +21,8 @@ export default function NavBar() {
     });
   }
 
+  console.log(menu);
+
   return (
     <nav>
       {renderLinks()}
