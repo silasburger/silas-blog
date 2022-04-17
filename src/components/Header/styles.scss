@@ -2,5 +2,25 @@ header {
     nav {
         display: flex;
         justify-content: space-between;
+        height: 100%;
+        color: black;
+        font-size: 25px;
     }
+    a {
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        width: 80px;
+    } 
+    .about, .back {
+        a {
+            align-items: start;
+            font-size: 1.5em;
+        }
+    }
+    padding: 0 0 0 5%;
 }

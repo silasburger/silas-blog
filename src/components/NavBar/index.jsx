@@ -14,11 +14,11 @@ export default function NavBar({ location }) {
         : menuMap;
 
   const renderLinks = () => {
-    return menu.map(({name, link}) => {
+    return menu.map(({name, link, label}) => {
       let content;
       if (name === 'back') content = <IoChevronBackSharp />;
-      else content = t(name);
-      return <Link language={language} to={link}>{content}</Link>;
+      else content = t(label);
+      return <div className={`link-wrapper ${name}`}><Link language={language} to={link}>{content}</Link></div>;
     });
   }
 

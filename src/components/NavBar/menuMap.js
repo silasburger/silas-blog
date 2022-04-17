@@ -8,6 +8,7 @@ const menuMap = [
 const menuMapHome = [
      {
       name: 'about',
+      label: 'silas.blog',
       link: '/about',
     },
 ];

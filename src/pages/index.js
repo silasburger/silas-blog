@@ -25,7 +25,6 @@ export default function Home({ location, data }) {
   return (
     <Layout location={location} >
       <div className="home-wrapper">
-        <h1>Posts</h1>
         {posts()}
       </div>
     </Layout>
