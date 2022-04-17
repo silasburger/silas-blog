@@ -46,7 +46,7 @@ module.exports = {
           },
           keySeparator: false,
           nsSeparator: false,
-          debug: true,
+          debug: false,
         },
         pages: [
           // {
