@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { useI18next, Link} from 'gatsby-plugin-react-i18next';
 
 
-export default function Home({ data }) {
+export default function Home({ location, data }) {
   const {t} = useTranslation(); 
   const { language } = useI18next();
 
@@ -22,7 +22,7 @@ export default function Home({ data }) {
   });
 
   return (
-    <Layout>
+    <Layout location={location} >
       <div className="home-wrapper">
         <h1>Posts</h1>
         {posts()}

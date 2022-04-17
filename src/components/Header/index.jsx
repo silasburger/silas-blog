@@ -2,10 +2,10 @@ import React from "react";
 import NavBar from 'components/NavBar';
 import './styles.scss';
 
-export default function Header() {
+export default function Header({ location }) {
   return (
     <header>
-      <NavBar />
+      <NavBar location={location} />
     </header>
   );
 }

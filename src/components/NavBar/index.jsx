@@ -4,10 +4,10 @@ import {menuMap, menuMapHome} from './menuMap';
 import LanguageSwitcher from 'components/LanguageSwitcher';
 import { IoChevronBackSharp } from "react-icons/io5";
 
-export default function NavBar() {
+export default function NavBar({ location }) {
   const { language } = useI18next();
   const { t } = useTranslation();
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '';
+  const pathname = location.pathname;
   const menu = /^\/es\/?$|^\/$/.test(pathname) 
         ? menuMapHome 
         : menuMap;
@@ -20,8 +20,6 @@ export default function NavBar() {
       return <Link language={language} to={link}>{content}</Link>;
     });
   }
-
-  console.log(menu);
 
   return (
     <nav>

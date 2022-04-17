@@ -4,11 +4,12 @@ import Layout from 'components/Layout';
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
+  location
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <Layout>
+    <Layout location={location} >
       <div className="blog-post-wrapper">
         <div className="blog-post">
           <h1>{frontmatter.title}</h1>
