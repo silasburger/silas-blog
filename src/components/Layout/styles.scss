@@ -4,14 +4,11 @@
     box-sizing: border-box;
 }
 
-header {
+header, footer {
     height: 40px;
+    padding: 0 20px;
 }
 
-footer {
-    height: 40px;
-}
-
-layout-wrapper {
+.layout-wrapper {
     height: 100%;
 }
