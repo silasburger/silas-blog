@@ -1,5 +1,5 @@
 ---
-slug: "2"
+slug: /post/2
 date: 2022-04-17T11:45:57.181Z
 title: Una Segunda Entrada del Blog
 # en or es
