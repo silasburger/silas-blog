@@ -1,8 +1,17 @@
-.footer-wrapper {
-    position: absolute;
-    bottom: 0;
+.page-wrapper {
+    padding: 20px 8%;
+    min-height: calc(100vh - 80px);
+    box-sizing: border-box;
 }
 
-.page-wrapper {
-    margin: 20px 150px
+header {
+    height: 40px;
+}
+
+footer {
+    height: 40px;
+}
+
+layout-wrapper {
+    height: 100%;
 }

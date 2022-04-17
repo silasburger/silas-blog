@@ -10,5 +10,6 @@ body,
 #___gatsby > div,
 #gatsby-focus-wrapper {
   height: 100%;
+  margin: 0;
 }
 
