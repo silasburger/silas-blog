@@ -1,0 +1,16 @@
+.post-wrapper {
+    &:first-of-type {
+        padding-top: 0;
+    }
+    padding-top: 20px;
+    a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    i {
+        color: #666;
+    }
+}

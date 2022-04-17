@@ -17,7 +17,9 @@ export default function Home({ location, data }) {
 
     return (
       <div key={slug + date} className="post-wrapper">
-        <Link language={language} to={slug}>{title}</Link><i>{date}</i>
+        <Link language={language} to={slug}>
+            {title}<br></ br><i>{date}</i>
+        </Link>
       </div>
     );
   });
@@ -50,7 +52,7 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
-            date
+            date(formatString: "MMMM DD, YYYY")
             title
             slug
           }
