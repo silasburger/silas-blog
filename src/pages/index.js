@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import Layout from 'components/Layout';
 import { useTranslation } from 'react-i18next';
 import { useI18next, Link} from 'gatsby-plugin-react-i18next';
+import './index.scss';
 
 
 export default function Home({ location, data }) {

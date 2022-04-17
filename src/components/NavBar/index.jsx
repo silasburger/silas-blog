@@ -3,6 +3,7 @@ import { Link, useI18next, useTranslation} from 'gatsby-plugin-react-i18next';
 import {menuMap, menuMapHome} from './menuMap';
 import LanguageSwitcher from 'components/LanguageSwitcher';
 import { IoChevronBackSharp } from "react-icons/io5";
+import './styles.scss';
 
 export default function NavBar({ location }) {
   const { language } = useI18next();

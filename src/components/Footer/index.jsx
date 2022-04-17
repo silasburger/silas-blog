@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer({lang}) {
   return (
-    <div>
+    <div className="footer-wrapper">
       Footer
     </div>
   );

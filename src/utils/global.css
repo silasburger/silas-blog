@@ -1,11 +1,14 @@
 html {
     background-color: azure;
+    font-family: 'Muli', 'Roboto';
 }
 
-html,
+/* html,
 body,
 #___gatsby,
 #___gatsby > div,
 #gatsby-focus-wrapper {
   height: 100%;
 }
+
+*/
