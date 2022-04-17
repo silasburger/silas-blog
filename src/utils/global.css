@@ -1,9 +1,10 @@
 html {
     background-color: azure;
     font-family: 'Muli', 'Roboto';
+    box-sizing: border-box;
 }
 
-/* html,
+html,
 body,
 #___gatsby,
 #___gatsby > div,
@@ -11,4 +12,3 @@ body,
   height: 100%;
 }
 
-*/
