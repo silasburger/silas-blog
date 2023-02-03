@@ -1,19 +1,23 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from 'components/Layout'; 
+import Layout from 'components/Layout';
+import { useI18next } from "gatsby-plugin-react-i18next";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
   location
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter, html } = markdownRemark;   
+
+  const { language } = useI18next();
+  const formattedDate = new Date(frontmatter.date).toLocaleDateString(language);
   return (
     <Layout location={location} >
       <div className="blog-post-wrapper">
         <div className="blog-post">
           <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.date}</h2>
+          <h2>{formattedDate}</h2>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -29,7 +33,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: {slug: {eq: $slug}, lang: {eq: $language}}) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date
         slug
         title
       }

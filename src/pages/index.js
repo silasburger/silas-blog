@@ -15,10 +15,12 @@ export default function Home({ location, data }) {
   const posts = () => edges.map(post => {
     const {date, title, slug} = post.node.frontmatter;
 
+    const formattedDate = new Date(date).toLocaleDateString(language)
+
     return (
       <div key={slug + date} className="post-wrapper">
         <Link language={language} to={slug}>
-            {title}<br></ br><i>{date}</i>
+            {title}<br></ br><i>{formattedDate}</i>
         </Link>
       </div>
     );
@@ -52,7 +54,7 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date
             title
             slug
           }
