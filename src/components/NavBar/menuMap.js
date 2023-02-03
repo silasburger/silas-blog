@@ -8,10 +8,11 @@ const menuMap = [
 const menuMapHome = [
      {
       name: 'about',
-      label: 'silas.blog',
+      label: '✍️',
       link: '/about',
     },
 ];
 
 
 export {menuMap, menuMapHome};
+  

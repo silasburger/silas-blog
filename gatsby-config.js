@@ -6,10 +6,10 @@
 
 module.exports = {
   siteMetadata: {
-    title: "silas.blog",
+    title: "silaswrites.com",
     supportedLanguages: ['en', 'es'],
     defaultLanguage: 'en',
-  }, 
+  },
   plugins: [
     `gatsby-plugin-netlify-cms`,
     'gatsby-plugin-netlify',
@@ -37,7 +37,7 @@ module.exports = {
         languages: [`en`, `es`],
         defaultLanguage: `en`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-        siteUrl: `https://silas.blog`,
+        siteUrl: `https://silaswrites.com`,
         // you can pass any i18next options
         // pass following options to allow message content as a key
         i18nextOptions: {
@@ -49,23 +49,19 @@ module.exports = {
           debug: false,
         },
         pages: [
-          // {
-          //   matchPath: '/:lang?/about',
-          //   getLanguageFromPath: true,
-          //   languages: ['es', 'en']
-          // },
           {
             matchPath: '/:lang?/post/:uid',
             getLanguageFromPath: true,
             languages: ['es', 'en'],
           },
-          // {
-          //   matchPath: '/',
-          //   getLanguageFromPath: true,
-          //   languages: ['es', 'en'],
-          // },
         ]
       }
-    }
+    }, 
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/icon.png',
+      },
+    },
   ],
 }
