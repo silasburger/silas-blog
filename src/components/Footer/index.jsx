@@ -1,10 +1,10 @@
 import React from "react";
 import './styles.scss';
 
-export default function Footer({lang}) {
+export default function Footer({ lang }) {
   return (
     <footer className="footer-wrapper">
-      Footer
+      © 2023 Silas Burger
     </footer>
   );
 }

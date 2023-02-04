@@ -5,10 +5,10 @@ import { graphql } from 'gatsby';
 
 export default function About({ location }) {
   const { t } = useTranslation();
-  
+
   return (
     <Layout location={location} >
-      <p>{ t('about_text') }</p>
+      <p>{t('about_text')}</p>
     </Layout>
   );
 }

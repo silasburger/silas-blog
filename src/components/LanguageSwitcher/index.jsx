@@ -19,7 +19,7 @@ function LanguageSwitcher({ language }) {
         to={originalPath}
         language={'en'}
       >
-            <IoGlobeOutline /> es
+        <IoGlobeOutline /> es
       </Link>
     )
   }

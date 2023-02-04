@@ -15,6 +15,7 @@ export default function HTML(props) {
           href="https://fonts.googleapis.com/css?family=Roboto|Muli"
           rel="stylesheet"
         />
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css"></link>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

@@ -6,11 +6,11 @@ import './styles.scss';
 export default function Layout({ location, children }) {
 
   return (
-    <div className="layout-wrapper">
+    <div className="container-fluid ">
       <Header location={location} />
-        <div className="page-wrapper" >
-          {children}
-        </div>
+      <div className="container" >
+        {children}
+      </div>
       <Footer />
     </div>
   )

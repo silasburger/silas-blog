@@ -2,25 +2,25 @@ import React from "react";
 import { graphql } from 'gatsby';
 import Layout from 'components/Layout';
 import { useTranslation } from 'react-i18next';
-import { useI18next, Link} from 'gatsby-plugin-react-i18next';
+import { useI18next, Link } from 'gatsby-plugin-react-i18next';
 import './index.scss';
 
 
 export default function Home({ location, data }) {
-  const {t} = useTranslation(); 
+  const { t } = useTranslation();
   const { language } = useI18next();
 
-  const {allMarkdownRemark: { edges }} = data;
+  const { allMarkdownRemark: { edges } } = data;
 
   const posts = () => edges.map(post => {
-    const {date, title, slug} = post.node.frontmatter;
+    const { date, title, slug } = post.node.frontmatter;
 
     const formattedDate = new Date(date).toLocaleDateString(language)
 
     return (
       <div key={slug + date} className="post-wrapper">
         <Link language={language} to={slug}>
-            {title}<br></ br><i>{formattedDate}</i>
+          {title}<br /><i>{formattedDate}</i>
         </Link>
       </div>
     );

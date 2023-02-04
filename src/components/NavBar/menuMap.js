@@ -1,18 +1,17 @@
 const menuMap = [
-     {
-      name: 'back',
-      link: '/',
-    },
+  {
+    name: 'back',
+    link: '/',
+  },
 ];
 
 const menuMapHome = [
-     {
-      name: 'about',
-      label: '✍️',
-      link: '/about',
-    },
+  {
+    name: 'about',
+    label: '✍️',
+    link: '/about',
+  },
 ];
 
 
-export {menuMap, menuMapHome};
-  
+export { menuMap, menuMapHome };
