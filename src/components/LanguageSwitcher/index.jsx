@@ -10,7 +10,7 @@ function LanguageSwitcher({ language }) {
   if (language === "en") {
     link = (
       <Link to={originalPath} language={'es'}>
-        <IoGlobeOutline /> en
+        <IoGlobeOutline />
       </Link>
     )
   } else {
@@ -19,7 +19,7 @@ function LanguageSwitcher({ language }) {
         to={originalPath}
         language={'en'}
       >
-        <IoGlobeOutline /> es
+        <IoGlobeOutline />
       </Link>
     )
   }
