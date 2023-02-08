@@ -5,7 +5,7 @@ title: Bureaucracy
 # en or es
 lang: en
 ---
-During the first two years of the pandemic inefficiency and queuing was a side effect of the lockdown that was difficult for many to avoid. Luckily, I was able to avoid tasks such as visiting the DMV or renewing a passport. On the other hand, there was little traffic and tranquility on the city streets. For every fault that the US has, it isn't horribly bureaucratic. 
+During the first two years of the pandemic inefficiency and queuing was a side effect of the lockdown that was difficult for many to avoid. I was able to avoid tasks such as visiting the DMV or renewing a passport. There was less traffic and a general feeling tranquility on city streets. For every fault that the US has, it isn't horribly bureaucratic. 
 
 I came to Berlin on December 10th, 2021 when tests were still required for restaurants and bars. I had to get an electronic vaccination certificate, and even found that I was missing one vaccination since the J&J vaccination wasn't considered legitimate. There were free test centers on every block, which was great considering you needed a test for just about anything.
 
